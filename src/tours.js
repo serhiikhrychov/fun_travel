@@ -11,8 +11,8 @@ import './style/tours.css'
 const tourHeaderImage = new Image()
 tourHeaderImage.src = tourImage
 
-// const column1 = document.getElementById('header');
-// column1.appendChild(tourHeaderImage);
+const column1 = document.getElementById('header');
+column1.appendChild(tourHeaderImage);
 
 // event listener
 const hello = document.getElementById('hello');

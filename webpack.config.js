@@ -61,10 +61,12 @@ module.exports = {
       filename: '[name].css'
     }),
     new HtmlWebpackPlugin({
+      inject: true,
       filename: 'tours.html',
       template: path.resolve(__dirname, "src", "tours.html"),
       // template: 'src/tours.html',
-      chunks: []
+      chunks: ['tours'],
+      // chunks: []
     }),
   ]
 }
