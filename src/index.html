@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>FunTravel Agency</title>
+</head>
+<body class="container full-height-grow" id="landing-page">
+<div class="first-page">
+<header class="main-header">
+
+    <div class="container header">
+        <div class="row">
+            <div class="col-sm-8">
+                <a href="/" class="logo-link">
+                    <div class="logo-text"> Fun Travel</div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/"> HOME</a></li>
+                        <li><a href="tours.html"> TOURS</a></li>
+                        <li><a href="About.html"> ABOUT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container ">
+        <div class="row main-title">
+        <div class="col-12">Enjoy Your Dream Vacation</div>
+        </div>
+    </div>
+    <div class="container search">
+        <div class="row search-field">
+            <div class="col-sm-3">
+            <div class="dropdown-select">
+                <select id="where-to-go">
+                    <option selected disabled>Destination</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="thai">Thailand</option>
+                    <option value="indonesia">Indonesia</option>
+                </select>
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <label for="start">From date</label>
+                <input type="date" id="start" name="trip-start"
+                       value="Departure"
+                       min="2021-01-01" max="2022-12-31">
+            </div>
+            <div class="col-sm-3">
+                <label for="end">To date</label>
+                <input type="date" id="end" name="trip-end"
+                       value="Arriving"
+                       min="2021-01-01" max="2022-12-31">
+            </div>
+            <div class="col-sm-3">
+                <a type="submit" class="search-button">Search</a>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<section>
+    <div class="container">
+    <div class="row second-page-title">
+        <div class="col-12">
+            <p>Best Offers</p>
+            <p>Check out our top-rated tours</p>
+        </div>
+    </div>
+        <div class="row second-page-content">
+            <div class="col-sm-4" id="second-page-column1">
+<!--                <img src="/src/images/Hotel1.png" alt="Bali, Indonesia" width="506" height="529">-->
+            </div>
+            <div class="col-sm-4" id="second-page-column2">
+<!--                <img src="images/secondpage-hotel2.png" alt="Istanbul, Turkey" width="506" height="529">-->
+            </div>
+            <div class="col-sm-4" id="second-page-column3">
+<!--                <img src="images/secondpage-hotel3.png" alt="Malaga, Spain" width="506" height="529">-->
+            </div>
+        </div>
+        <div class="row second-page-button">
+            <div class="col">
+                <button class="btn-on-second-page" name="btn-view-all-tours">View All Tours </button>
+            </div>
+        </div>
+</div>
+</div>
+</section>
+<section>
+    <div class="container why-we-page-title">
+    <div class="row why-page-title">
+        <div class="col-12">
+            <p>Why Fun Travel</p>
+        </div>
+    </div>
+    </div>
+    <div class="container why-we-page">
+        <div class="row why-page-content1">
+            <div class="col" id="why-page-column1">
+<!--                                <img src="images/hotel1.png" alt="Bali, Indonesia" width="506" height="529">-->
+            </div>
+            <div class="col" id="why-page-column2">
+                <!--                <img src="images/secondpage-hotel2.png" alt="Istanbul, Turkey" width="506" height="529">-->
+            </div>
+        </div>
+        <div class="row why-page-content2">
+            <div class="col" id="why-page-column3">
+                <!--                <img src="images/hotel1.png" alt="Bali, Indonesia" width="506" height="529">-->
+            </div>
+            <div class="col" id="why-page-column4">
+                <!--                <img src="images/secondpage-hotel2.png" alt="Istanbul, Turkey" width="506" height="529">-->
+            </div>
+        </div>
+        <div class="row why-page-content3">
+            <div class="col" id="why-page-column5">
+                <!--                <img src="images/hotel1.png" alt="Bali, Indonesia" width="506" height="529">-->
+            </div>
+            <div class="col" id="why-page-column6">
+                <!--                <img src="images/secondpage-hotel2.png" alt="Istanbul, Turkey" width="506" height="529">-->
+            </div>
+        </div>
+    </div>
+    <div class="container contacts-page">
+        <div class="row contacts-page-content">
+            <div class="col" id="contacts-page-column1">
+            <h3>Fun Travel</h3>
+                <p>Since 2002, we have been offering travel services of the highest quality, combining our energy and enthusiasm.</p>
+            </div>
+            <div class="col" id="contacts-page-column2">
+                <h3>Our Contacts</h3>
+                <p><span id="address"></span> 732/21 Second Street, Manchester, King Street, Kingston United Kingdom</p>
+                <p><span id="phone"></span> 555-333-222</p>
+                <p><span id="email"></span> email@email.com</p>
+            </div>
+            <div class="col" id="contacts-page-column3">
+                <h3>Follow Us</h3>
+                <span id="inst-icon"></span>
+                <span id="face-icon"></span>
+                <span id="tube-icon"></span>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
