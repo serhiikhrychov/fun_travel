@@ -9,14 +9,88 @@ html, body {
     margin: 0;
 }
 
-.full-height-g {
+.full-height-grow-tour {
     display: flex;
     flex-direction: column;
-    background-color: #cace5c;
 }
 
-.header{
+#header{
     margin-top: 15px;
     width: 100%;
     height: 100%;
+}
+
+.row .tour{
+    margin-left: -11px;
+    margin-right: -69px;
+}
+
+body {
+    background: no-repeat center center;
+
+
+}
+
+.full-height-grow-tour {
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*height: auto;*/
+    /*width: auto;*/
+    background-size: 205vh 35vh;
+    position: static;
+    background-position-y: top;
+
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+
+.main-nav a:hover {
+    color: #adadad;
+    text-decoration-line: underline;
+}
+
+.logo-text-tour > a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.main-title-tour{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 98px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: 44px;
+}
+
+.container .all-tours {
+ position: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 198px;
+}
+
+.tours  img {
+    width: 100%;
+    height: auto;
 }

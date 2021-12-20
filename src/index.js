@@ -20,113 +20,70 @@ import contact4 from '/src/images/contact_us/image 18.png'
 import contact5 from '/src/images/contact_us/image 19.png'
 import contact6 from '/src/images/contact_us/image 20.png'
 
-
-// second page
-const imageOfHotel1 = new Image()
-imageOfHotel1.src = hotel1
-
-const imageOfHotel2 = new Image()
-imageOfHotel2.src = hotel2
-
-const imageOfHotel3 = new Image()
-imageOfHotel3.src = hotel3
-
-const landingPage = document.getElementById('landing-page');
-
-// landingPage.style.backgroundImage = "url('./src/images/mainscr.png')";
-
 document.body.style.backgroundImage = "url('./src/images/mainscr.png')";
 
+// SECOND PAGE
 
+const hotels = [hotel1, hotel2, hotel3];
 
-const column1 = document.getElementById('second-page-column1');
-column1.appendChild(imageOfHotel1);
+// array with new Image()
+hotels.forEach((hotel, index) =>{
+    const hotelImg = new Image()
+    hotelImg.src = hotel
+    return hotels[index] = hotelImg;
+});
 
-const column2 = document.getElementById('second-page-column2');
-column2.appendChild(imageOfHotel2);
+// create array with DOM elements + add new element
+const hotelColumns = [];
+for (let i=1; i<=hotels.length; i++)
+{
+    hotelColumns[i-1] = document.getElementById('second-page-column' + [i]);
+    hotelColumns[i-1].appendChild(hotels[i-1]);
+}
 
-const column3 = document.getElementById('second-page-column3');
-column3.appendChild(imageOfHotel3);
+// WHY WE PAGE
 
-// why we page
+const whyWeArray = [whyWe1, whyWe2, whyWe3, whyWe4, whyWe5, whyWe6];
 
-const imageOfWhyWe1 = new Image()
-imageOfWhyWe1.src = whyWe1
+whyWeArray.forEach((whyWeElem, index) =>{
+    const whyWeElemImg = new Image()
+    whyWeElemImg.src = whyWeElem
+    return whyWeArray[index] = whyWeElemImg;
+});
 
-const imageOfWhyWe2 = new Image()
-imageOfWhyWe2.src = whyWe2
+// create array with DOM elements + add new element
+const whyWeColumns = [];
+for (let i=1; i<=whyWeArray.length; i++)
+{
+    whyWeColumns[i-1] = document.getElementById('why-page-column' + [i]);
+    whyWeColumns[i-1].appendChild(whyWeArray[i-1]);
+}
 
-const imageOfWhyWe3 = new Image()
-imageOfWhyWe3.src = whyWe3
+//CONTACT US
 
-const imageOfWhyWe4 = new Image()
-imageOfWhyWe4.src = whyWe4
+const contactUsArray = [contact1, contact2, contact3, contact4, contact5, contact6];
 
-const imageOfWhyWe5 = new Image()
-imageOfWhyWe5.src = whyWe5
-
-const imageOfWhyWe6 = new Image()
-imageOfWhyWe6.src = whyWe6
-
-const whyColumn1 = document.getElementById('why-page-column1');
-whyColumn1.appendChild(imageOfWhyWe1);
-
-const whyColumn2 = document.getElementById('why-page-column2');
-whyColumn2.appendChild(imageOfWhyWe2);
-
-const whyColumn3 = document.getElementById('why-page-column3');
-whyColumn3.appendChild(imageOfWhyWe3);
-
-const whyColumn4 = document.getElementById('why-page-column4');
-whyColumn4.appendChild(imageOfWhyWe4);
-
-const whyColumn5 = document.getElementById('why-page-column5');
-whyColumn5.appendChild(imageOfWhyWe5);
-
-const whyColumn6 = document.getElementById('why-page-column6');
-whyColumn6.appendChild(imageOfWhyWe6);
-
-//contact us
-
-const imageOfContactUs1 = new Image()
-imageOfContactUs1.src = contact1
-
-const imageOfContactUs2 = new Image()
-imageOfContactUs2.src = contact2
-
-const imageOfContactUs3 = new Image()
-imageOfContactUs3.src = contact3
-
-const imageOfContactUs4 = new Image()
-imageOfContactUs4.src = contact4
-
-const imageOfContactUs5 = new Image()
-imageOfContactUs5.src = contact5
-
-const imageOfContactUs6 = new Image()
-imageOfContactUs6.src = contact6
+// array with new Image()
+contactUsArray.forEach((contactImgElement, index) =>{
+    const contactImg = new Image()
+    contactImg.src = contactImgElement
+    return contactUsArray[index] = contactImg;
+});
 
 const address = document.getElementById('address');
-address.appendChild(imageOfContactUs1);
+address.appendChild(contactUsArray[0]);
 
 const phone = document.getElementById('phone');
-phone.appendChild(imageOfContactUs2);
+phone.appendChild(contactUsArray[1]);
 
 const email = document.getElementById('email');
-email.appendChild(imageOfContactUs3);
+email.appendChild(contactUsArray[2]);
 
 const instIcon = document.getElementById('inst-icon');
-instIcon.appendChild(imageOfContactUs4);
+instIcon.appendChild(contactUsArray[3]);
 
 const faceIcon = document.getElementById('face-icon');
-faceIcon.appendChild(imageOfContactUs5);
+faceIcon.appendChild(contactUsArray[4]);
 
 const tubeIcon = document.getElementById('tube-icon');
-tubeIcon.appendChild(imageOfContactUs6);
-
-let elem = document.createElement('div');
-elem.innerHTML = "shit tour page";
-
-const hi = document.getElementById('second-page-column1');
-console.log(hi);
-hi.append(elem);
+tubeIcon.appendChild(contactUsArray[5]);
