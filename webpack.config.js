@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const pages = ["index", "tours"];
+const pages = ["index", "tours", "about"];
 
 module.exports = {
   // entry: { index: path.resolve(__dirname, "src", "index.js")},
@@ -64,9 +64,15 @@ module.exports = {
       inject: true,
       filename: 'tours.html',
       template: path.resolve(__dirname, "src", "tours.html"),
-      // template: 'src/tours.html',
       chunks: ['tours'],
       // chunks: []
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'about.html',
+      template: path.resolve(__dirname, "src", "about.html"),
+      chunks: ['about'],
+      // chunks: []
+    })
   ]
 }

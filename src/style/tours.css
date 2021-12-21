@@ -27,16 +27,9 @@ html, body {
 
 body {
     background: no-repeat center center;
-
-
 }
 
 .full-height-grow-tour {
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*height: auto;*/
-    /*width: auto;*/
     background-size: 205vh 35vh;
     position: static;
     background-position-y: top;

@@ -191,7 +191,7 @@ div [id ^='second-page'] > img {
 .second-page-button {
     display:flex;
     float: none;
-    width: 100%;
+    width: auto;
     flex-direction: row;
     justify-content: center;
     margin-top: -78px;
@@ -209,6 +209,7 @@ div [id ^='second-page'] > img {
     box-shadow: 0 10px 40px 0 #F8A17033;
     line-height: 2.5em;
     cursor: pointer;
+    width: 280px;
 }
 
 .why-page-title{
@@ -246,11 +247,6 @@ div [id ^='second-page'] > img {
     width: auto;
     margin: 50px;
 }
-
-/*.contacts-page{*/
-/*    display: flex;*/
-/*    margin: -64px 19px 13px -110px;*/
-/*}*/
 
 .contacts-page-content {
     display: flex;
@@ -350,9 +346,80 @@ div [id ^='second-page'] > img {
     margin-left: auto;
 }
 
-/*@media only screen and (min-width: 600px) {*/
-/*    !* For desktop: *!*/
-/*     .col {*/
-/*        width: 50%;*/
-/*    }*/
-/*}*/
+@media only screen and (max-width: 1200px) {
+
+    .second-page-content {
+        display: inline-flex;
+        margin-left: -177px;
+    }
+
+    .second-page-content div {
+        width: 200px;
+    }
+
+    .container {
+        width: 600px
+    }
+
+    .main-title {
+        margin-left: 35px;
+        font-size: 42px;
+    }
+
+    #second-page-column1 > img {
+        width: 250px;
+        height: 270px;
+    }
+
+    #second-page-column2 > img {
+        width: 250px;
+        height: 270px;
+    }
+
+    #second-page-column3 > img {
+        width: 250px;
+        height: 270px;
+    }
+
+    .why-we-page {
+        margin-top: -80px;
+    }
+
+    .why-we-page > div {
+        width: 411px;
+        margin: -18px;
+    }
+
+    .contacts-page-content {
+        display: flex;
+        margin-top: 29px;
+        flex-direction: column;
+    }
+
+    p.contacts-page-content {
+        font-size: 10px;
+    }
+
+    #contacts-page-column2 {
+        margin: -2px 65px 32px -107px;
+    }
+
+
+    #contacts-page-column3 {
+        margin: -4px 176px 5px -108px;
+    }
+
+    #contacts-page-column2 >h3 {
+        font-size: 30px;
+    }
+
+    #contacts-page-column3 > h3 {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 54px;
+        position: sticky;
+        width: 603px;
+        height: 51px;
+        margin-top: 15px;
+    }
+}
