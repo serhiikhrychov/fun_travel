@@ -4,9 +4,10 @@ import headerImg from './images/about/header_about.png'
 import aboutImg from './images/about/image.png'
 
 //Add body image
-const body = document.getElementById('about-page');
+// const body = document.getElementById('about-page');
+const header = document.getElementById('header-about');
 
-body.style.backgroundImage = "url('./src/images/about/header_about.png')";
+header.style.backgroundImage = "url('./src/images/about/header_about.png')";
 
 const imagesOnThePage = [aboutImg];
 

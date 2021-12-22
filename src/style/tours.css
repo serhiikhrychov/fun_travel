@@ -10,14 +10,19 @@ html, body {
 }
 
 .full-height-grow-tour {
+    width: auto;
+    height: 311px;
+}
+
+.full-height-grow-tour {
     display: flex;
     flex-direction: column;
 }
 
-#header{
-    margin-top: 15px;
+#header-tours{
+    margin-top: 0;
     width: 100%;
-    height: 100%;
+    height: 317px;
 }
 
 .row .tour{
@@ -30,10 +35,12 @@ body {
 }
 
 .full-height-grow-tour {
+    height: auto;
+    width: auto;
     background-size: 205vh 35vh;
     position: static;
     background-position-y: top;
-
+    padding: 0;
 }
 
 .main-nav ul {
@@ -86,4 +93,15 @@ body {
 .tours  img {
     width: 100%;
     height: auto;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+   .container .all-tours {
+        position: center;
+        display: flex;
+        padding-top: 175px;
+        flex-direction: column;
+    }
 }

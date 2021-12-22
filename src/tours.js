@@ -10,8 +10,9 @@ import tour4 from './images/tours_page/Group 8.png'
 
 //Add body image
 const body = document.getElementById('tours-page');
+const header = document.getElementById('header-tours');
 
-body.style.backgroundImage = "url('./src/images/tours_page/mainImage.png')";
+header.style.backgroundImage = "url('./src/images/tours_page/mainImage.png')";
 
 // add tours image
 
